@@ -37,8 +37,3 @@ while(counter < 11)
 for(let i = 0;i<10;i=i+2) {
     console.log("For loop, value of i: "+i);
 }
-
-let names  = ["ray"];
-names.forEach(element => {
-    console.log(element);
-});
