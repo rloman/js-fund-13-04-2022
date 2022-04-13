@@ -17,7 +17,7 @@ if(maand==1) {
             }
         }
     }
-}
+} // kan dus vervangen worden door
 */
 
 maand = 314;
