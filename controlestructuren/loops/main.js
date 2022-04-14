@@ -14,7 +14,7 @@ while(<booleanExpression>) {
 */
 
 let counter = 1;
-while(counter < 11) { // start block
+while (counter < 11) { // start block
     console.log(counter);
     counter++;
 } // eind block
@@ -30,10 +30,26 @@ do {
     console.log(counter);
     counter += 2;
 }
-while(counter < 11)
+while (counter < 11)
 
 // for loop
 
-for(let i = 0;i<10;i=i+2) {
-    console.log("For loop, value of i: "+i);
+/*
+
+Syntax van een basic for loop
+for(<initialisatie>;<booleanExpression>;<incrementStep>) {
+    
+    1) Als de booleanExpressie waar is
+       Dan wordt het block uitgevoerd
+    Daarna voert de machine de incrementStep uit
+    GOTO 1
+}
+*/
+console.log("Nu de for loop")
+for (let cijfer = 0; cijfer < 10; cijfer = cijfer + 1) {
+    console.log("For loop, value of i: " + cijfer);
+}
+
+for(let cijfer = 10;cijfer > 0;cijfer = cijfer + 1) {
+    console.log("For loop, value of i: " + cijfer);
 }
