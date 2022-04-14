@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="content">
+    </div>
+
+
+    <div id="myDiv">
+        <h2>This is a heading in a div element</h2>
+        <p>This is some text in a div element.</p>
+    </div>
+
+    <form name="data">
+        Address: <input id="nameId" name="address" value="Abbey Road 42">
+
+    </form>
+    <script>
+        alert(/*document.*/data.address.value);
+
+        // andere manier
+        alert(document.forms[0].address.value);
+        // by document.getElementById
+        alert(document.getElementById("nameId").value);
+
+        let p = document.createElement("p");
+        p.innerHTML = "Het boek van ome Joop";
+        p.style.color = "blue";
+        document.getElementById("content").appendChild(p);
+
+
+        // all divs
+        let allDivs = document.getElementsByTagName("div");
+        for(let div of allDivs) {
+            div.style.backgroundColor = "blue";
+        }
+
+        let div = document.getElementById("myDiv");
+        div.style.backgroundColor = "red";
+    </script>
+
+</body>
+
+</html>
