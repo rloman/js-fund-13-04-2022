@@ -42,6 +42,8 @@ for(let i = 1;i<=10;i++) {
 let numbers = [1,2,3];
 let totaal = 0;
 
+console.table(numbers);
+
 // zo loop je er overheen
 for(let i = 0;i<numbers.length;i++) {
     let x = numbers[i];
