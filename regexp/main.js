@@ -2,6 +2,7 @@ let postcode = window.prompt("Voer een postcode in");
 
 // Takeaway
 let re = /^\d{4}\s?[a-zA-Z]{2}$/;
+// toon rubylar
 
 let validatieResultaat = re.test(postcode); // boolean result (true of false)
 
