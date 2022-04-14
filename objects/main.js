@@ -28,6 +28,17 @@ training2.duur = 90;
 
 let trainings = [training, training2];
 
+/* Oefening
+Maak een object van je eigen hobby (of verzin een hobby)
+geef dat object drie eigenschappen (properties)
+console.log iets van dat object
+maak nog een object van hetzelfde type
+voeg beide gemaakte objecten toe in een array
+
+maak een loop over die array
+
+
+
 /*
 let op het verschil van 'in' en 'of'
 */
