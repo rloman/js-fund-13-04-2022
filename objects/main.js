@@ -37,12 +37,28 @@ voeg beide gemaakte objecten toe in een array
 
 maak een loop over die array
 
-
-
 /*
 let op het verschil van 'in' en 'of'
 */
 for(let trainingElement of trainings) {
     console.log("TrainingElement heeft afstand: "+trainingElement.afstand);
 }
+
+// sender
+let jsonString = JSON.stringify(trainings);
+
+console.log(jsonString);
+
+// ontvanger
+let geparsteTrainings = JSON.parse(jsonString);
+
+// dat gebruiken we hedendaags ENORM veel in REST services
+
+console.log(geparsteTrainings.datum);
+
+let persoon = {};
+persoon.training = training2;
+
+let personen = [persoon, persoon];
+console.log(JSON.stringify(persoon));
 
