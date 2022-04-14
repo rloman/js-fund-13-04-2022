@@ -1,3 +1,7 @@
+// credits
+//
+https://nodejs.dev/learn/writing-files-with-nodejs
+
 const fs = require('fs')
 
 const content = 'Some content!'
