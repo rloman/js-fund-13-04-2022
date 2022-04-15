@@ -1,6 +1,6 @@
 // credits
 //
-https://nodejs.dev/learn/writing-files-with-nodejs
+//https://nodejs.dev/learn/writing-files-with-nodejs
 
 const fs = require('fs')
 
