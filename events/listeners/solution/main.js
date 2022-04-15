@@ -1,12 +1,12 @@
 function init() {
-
-    
+ 
     let knopjes = document.getElementsByClassName("clicker");
     
     
     let index = 0;
     for(let knopje of knopjes) { // knopje is een button
         knopje.value += (index++);
+        // Takeaway
         knopje.addEventListener('click', myEventListener);
     }
 
