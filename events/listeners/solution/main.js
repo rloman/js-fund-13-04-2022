@@ -7,7 +7,7 @@ function init() {
     for(let knopje of knopjes) { // knopje is een button
         knopje.value += (index++);
         // Takeaway
-        knopje.addEventListener('click', myEventListener);
+        knopje.addEventListener('mouseout', myEventListener);
     }
 
     // demo, Takeaway: dit is een 'anonieme functie'
