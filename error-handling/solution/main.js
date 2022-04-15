@@ -7,6 +7,24 @@ function delen(a,b) {
     return a/b;
 }
 
+console.log(delen(3,4));
+try {
+    console.log(delen(3,0));
+}
+catch(message) {
+    // error handler
+    console.log("Das jammer ... ");
+    console.log(message);
+
+    // probeer het probleem eventueel te fixen
+    throw message;
+}
+
+console.log("Einde programma");
+
+
+
+
 function printAndReturnLengthOfNames(names) {
     let counter = 0;
     for(let name of names) {
@@ -22,49 +40,3 @@ function printAndReturnLengthOfNames(names) {
 
     return counter;
 }
-
-try {
-    console.log(delen(3,4));
-}
-catch(e) {
-    console.error(e);
-}
-
-try {
-    console.log(delen(3,0));
-}
-catch(e) {
-    console.error(e);
-}
-
-try {
-    console.log(delen(3,4));
-}
-catch(e) {
-    console.error(e);
-}
-
-
-// dit is eigenlijk een invoer van de gebruiker.
-let namen = ["Aap", "Noot", "", "Mies", "Poedel"];
-
-try {
-    let aantalLeden = printAndReturnLengthOfNames(namen);
-    console.log("het aantal leden is: "+aantalLeden);
-}
-catch(e) {
-    console.error("He eh ... wat is dat voor lege naam!");
-}
-
-// gaat happy verder
-console.log("Succesvol einde van het programma!");
-
-{
-    // let op: let ::= scope in block
-    //         var ::= scope ook buiten het block
-    var lastName = "Loman";
-    let firstName = "Raymond";
-}
-
-console.log(lastName);
-// console.log(firstName); // error: firstName is out of scope now

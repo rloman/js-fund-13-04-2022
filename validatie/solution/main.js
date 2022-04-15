@@ -15,6 +15,10 @@ function validateForm() {
         messages += "U dient een geldige postcode (4 cijfers en dan 2 letters) in te voeren!\n";
     }
 
+    if(data.email.value.trim() == "") {
+        messages += "U dient een geldige email in te voeren!\n";
+    }
+
     if(messages != "") {
         alert(messages);
 
