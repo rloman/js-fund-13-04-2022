@@ -1,5 +1,5 @@
 
-let re = /\d{4}\s?[A-Z]{2}/;
+let re = /^[1-9]\d{3}\s?[A-Z]{2}$/;
 
 function validateForm() {
 
@@ -11,7 +11,7 @@ function validateForm() {
     }
 
     let resultValidation = re.test(postcode);
-    if(resultValidation == false) {
+    if(!resultValidation) {
         messages += "U dient een geldige postcode (4 cijfers en dan 2 letters) in te voeren!\n";
     }
 

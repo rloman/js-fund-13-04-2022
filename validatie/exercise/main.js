@@ -7,10 +7,10 @@ function validateForm() {
     let messages = "";
 
     if(data.address.value.trim() == "") {
-        messages += "U dient een geldig huisadres in te voeren\n";
+        ...maak foutmelding langer ... 
     }
 
-    let resultValidation = re.test(postcode);
+    let resultValidation = re.....
     if(resultValidation == false) {
         messages += "U dient een geldige postcode (4 cijfers en dan 2 letters) in te voeren!\n";
     }

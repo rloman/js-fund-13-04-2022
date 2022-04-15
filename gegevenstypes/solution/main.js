@@ -38,6 +38,9 @@ console.log("NCOI".indexOf("CO") == 1);
 // Takeaway: weet dat er een class Math is met allerlei rekentruukjes
 
 console.log(Math.PI);
+console.log(Math.E);
+console.log(Math.floor(3.5) == 3);
+console.log(Math.ceil(3.5) == 4);
 
 // Leuke truuk: als je een getal invoer als float (3.5 als voorbeeld ... of 4.0 of 5) en je wilt controleren
 // of dat getal een geheel getal is ...
@@ -63,6 +66,7 @@ console.log(now.getFullYear());
 
 
 console.log("Vandaag is het: "+now.getDay());
+console.log("Vandaag is het: "+now.getDate());
 
 // Exercise datatypes
 /*
@@ -75,3 +79,11 @@ print dan die namen in console.log of document.write
 Of doe de oefening uit het boekje
 
 */
+
+
+
+let number = 3.5555;
+let rounded = number.toFixed(2);
+console.log(rounded == 3.56);
+console.log(typeof(rounded) == "string");
+let roundedNumberAgain = parseFloat(rounded);
