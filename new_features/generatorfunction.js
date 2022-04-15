@@ -2,6 +2,7 @@ function* generateEvenNumbers(start, end) {
     let base = Math.floor(start / 2) * 2; // :-)
 
     while (base < end) {
+        console.log("Ben nu in de generator function");
         yield base += 2;
     }
 }
