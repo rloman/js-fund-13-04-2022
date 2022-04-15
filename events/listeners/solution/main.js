@@ -1,15 +1,3 @@
-
-
-function myEventListener(e) {
-    alert("You clicked me" + e.target.value);
-    console.log(e);
-}
-
-function myBlur() {
-    alert("You left me");
-}
-
-
 function init() {
 
     
@@ -26,4 +14,15 @@ function init() {
     document.getElementById("button4").addEventListener('click', function() {
         document.write("You clicked button4");
     } );
+}
+
+
+
+function myEventListener(e) {
+    alert("You clicked me" + e.target.value);
+    console.log(e);
+}
+
+function myBlur() {
+    alert("You left me");
 }
